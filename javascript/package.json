@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:majestic": "majestic --app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^24.5.0"
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.5.0",
+    "majestic": "^1.2.24"
   }
 }
