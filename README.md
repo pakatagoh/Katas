@@ -1,6 +1,6 @@
 # Katas
 
-Repo of practiced katas
+Repo of katas that I have practiced
 
 ## Resources
 
