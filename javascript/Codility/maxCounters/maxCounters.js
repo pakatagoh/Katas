@@ -1,0 +1,29 @@
+const solution = (N, arr) => {
+  var j;
+  var i;
+  var len = arr.length;
+  var lastMax = 0;
+  var max = 0;
+  var counters = new Array(N);
+  for (j = 0; j < N; j++) counters[j] = 0;
+  var n1 = N + 1;
+
+  for (j = 0; j < len; j++) {
+    if (arr[j] < n1) {
+      i = arr[j] - 1;
+      if (counters[i] < lastMax) counters[i] = lastMax;
+      counters[i]++;
+      if (max < counters[i]) max = counters[i];
+    } else {
+      lastMax = max;
+    }
+  }
+
+  for (j = 0; j < N; j++) {
+    if (counters[j] < lastMax) counters[j] = lastMax;
+  }
+
+  return counters;
+};
+
+module.exports = { solution };
