@@ -30,4 +30,16 @@ describe('permCheck', () => {
 
     expect(solution(input)).toBe(1);
   });
+
+  test('should return 0 for a input of [2]', () => {
+    const input = [2];
+
+    expect(solution(input)).toBe(0);
+  });
+
+  test('should return 0 for a input of [1,4,1]', () => {
+    const input = [1, 4, 1];
+
+    expect(solution(input)).toBe(0);
+  });
 });
