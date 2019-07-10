@@ -15,7 +15,7 @@ class Graph {
       return 'node does not exist';
     }
     if (!this.nodes[edge]) {
-      return `${edge} does not exist yet`;
+      return `node ${edge} does not exist yet`;
     }
     if (this.nodes[node][edge]) {
       return 'edge already exists';
@@ -54,17 +54,21 @@ const BFsearch = (graph, startNode, endNode) => {
 
   if (startNode === endNode) return true;
 
+  const visited = {};
   const queue = [];
   queue.push(startNode);
 
   while (queue.length !== 0) {
     const currentNode = queue.shift();
-    if (currentNode === endNode) return true;
+    visited[currentNode] = true;
+    if (Number(currentNode) === endNode) return true;
 
-    const edges = graph.findEdges(curretNode);
-    for (edge in edges) {
-      queue.push(edge);
-    }
+    const edges = Object.keys(graph.findEdges(currentNode));
+    edges.forEach((edge) => {
+      if (!visited[edge]) {
+        queue.push(edge);
+      }
+    });
   }
 
   return false;
