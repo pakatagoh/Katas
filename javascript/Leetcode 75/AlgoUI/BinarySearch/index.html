@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Binary Search</title>
+  </head>
+  <body>
+    <h1>Binary Search</h1>
+    <div id="root">
+      <div id="numbers" class="container"></div>
+      <form id="search-form">
+        <div class="select-container" style="margin-top: 10px">
+          <div>Pick a value to search for:</div>
+          <select name="search-value" class="value-select">
+            <option value="">Select a value</option>
+          </select>
+        </div>
+        <div id="select-error" style="height: 15px; color: red"></div>
+        <div style="margin-top: 10px">
+          <button id="search-button" class="button" type="submit">
+            Search
+          </button>
+        </div>
+      </form>
+      <div id="result-container" style="margin-top: 10px"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
