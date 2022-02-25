@@ -9,3 +9,5 @@ const solution = (arr) => {
 };
 
 module.exports = { solution };
+
+// mathematical formula for sum of consecutive integers from 1 to n is (n+1)*(n+2)/2
