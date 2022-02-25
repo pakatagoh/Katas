@@ -49,3 +49,7 @@ Write an efficient algorithm for the following assumptions:
 
 N is an integer within the range [2..100,000];
 each element of array A is an integer within the range [−1,000..1,000].
+
+## Solution
+
+https://app.codility.com/demo/results/trainingK5ASAU-U2P/
