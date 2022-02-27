@@ -42,3 +42,9 @@ M is an integer within the range [1..50,000];
 each element of arrays P, Q is an integer within the range [0..N − 1];
 P[K] ≤ Q[K], where 0 ≤ K < M;
 string S consists only of upper-case English letters A, C, G, T.
+
+## Solution
+
+O(N+M)
+
+https://app.codility.com/demo/results/trainingJKKWTJ-3PN/
